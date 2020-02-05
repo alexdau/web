@@ -1,7 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+
+
 }
+$siteColor: #f16d7f;
 
 body {
     font-family: 'Lato', sans-serif;
@@ -23,6 +26,9 @@ a {
     background-color: #ffffff;
     border: 1px solid #ececec;
     box-shadow: 0 0 10px 0 #ececec;
+    &__logo {
+
+    }
 }
 
 .logo {
@@ -43,7 +49,7 @@ a {
     align-items: center;
     font-size: 40px;
     font-weight: 900;
-    color: #f16d7f;
+    color: $siteColor;
     text-align: right;
     letter-spacing: 0.03em;
     -webkit-transform: scale(1);
@@ -54,7 +60,7 @@ a {
 .sec_letter {
     font-size: 30px;
     font-weight: 900;
-    color: #f16d7f;
+    color: $siteColor;
     text-align: left;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -125,7 +131,6 @@ a {
 .header__form {
     display: flex;
     align-items: center;
-    margin-left: 37px;
 }
 
 .header__right {
@@ -140,7 +145,7 @@ a {
     align-items: center;
     height: 38px;
     width: 130px;
-    background-color: #f16d7f;
+    background-color: $siteColor;
     font-size: 15px;
     color: #ffffff;
     text-align: right;
@@ -196,7 +201,7 @@ a {
 }
 
 .menu__link:hover {
-    border-bottom: 3px solid #f16d7f;
+    border-bottom: 3px solid $siteColor;
 }
 
 .promo {
@@ -219,7 +224,7 @@ a {
     flex-flow: row wrap;
     height: 92px;
     width: 509px;
-    border-left: 12px solid #f16d7f;
+    border-left: 12px solid $siteColor;
     line-height: 35px;
 }
 
@@ -344,7 +349,7 @@ a {
     
     font-size: 30px;
     font-weight: 900;
-    color: #f16d7f;
+    color: $siteColor;
     text-align: left;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -416,7 +421,7 @@ a {
 .product__price {
     font-size: 16px;
     font-weight: bold;
-    color: #f16d7f;
+    color: $siteColor;
     text-transform: uppercase;
 }
 
@@ -461,7 +466,7 @@ a {
     align-items: center;
     height: 48px;
     width: 212px;
-    background-color: #f16d7f;
+    background-color: $siteColor;
     font-size: 15px;
     color: #ffffff;
     text-align: right;
@@ -492,7 +497,7 @@ a {
 .img_dwn_text_left_2 {
     font-size: 54px;
     font-weight: bold;
-    color: #f16d7f;
+    color: $siteColor;
 
 }
 .img_dwn_text_left_3 {
@@ -565,16 +570,16 @@ a {
 }
 .subscribe_left_box {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: row;
     height: 438px; width: 800px;
     z-index: 2;
+    margin-left: 228px;
 }
 .art_box_dwn {
     display: flex;
     padding-top: 111px;
-    padding-left: 230px;
 }
 .art_men_dwn_img {
     width: 83px; height: 83px;
@@ -595,7 +600,7 @@ a {
 .art_men_t2 {
     font-size: 16px;
     font-weight: bold;
-    color: #f16d7f;
+    color: $siteColor;
     letter-spacing: 0.03em;
     line-height: 26px;
 }
@@ -661,10 +666,93 @@ a {
     border: 1px solid #d66170;
     border-left: none;
     border-radius: 0 23px 23px 0;
-    background-color: #f16d7f;
+    background-color: $siteColor;
     font-size: 15px;
     color: #ffffff;
     text-align: right;
     letter-spacing: 0.03em;
     line-height: 32px;
+}
+.footer-2 {
+    padding-left: 228px;
+    margin-top: 109px;
+}
+.footer-text-box {
+    display: block;
+    width: 430px;
+    height: 204px;
+}
+.menu__F {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 50px;
+
+    &__listF {
+        font-size: 16px;
+        color: #898989;
+        text-align: left;
+        letter-spacing: 0.03em;
+        line-height: 42px;
+        &__linkF {
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+        &__colorF {
+            text-decoration-color: $siteColor;
+        }
+    }
+}
+
+.text-gray {
+    color: #9f9f9f;
+}
+.footer {
+    &__logo {
+        margin-bottom: 29px;
+    }
+}
+.footer-3 {
+    display: flex;
+    justify-content: center;
+    //align-items: center;
+    height: 79px;
+    background-color: #e6e6e6;
+
+}
+.footer-3_left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+
+
+}
+.footer-3_right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+
+}
+.icon-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    background-color: #ffffff;
+    color: #b2b2b2;
+    margin: 4px;
+}
+.icon-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    background-color: $siteColor;
+    color: #ffffff;
+    margin: 4px;
+
 }
