@@ -27,6 +27,7 @@ a {
     border: 1px solid #ececec;
     box-shadow: 0 0 10px 0 #ececec;
     &__logo {
+        margin-right: 37px;
 
     }
 }
@@ -545,13 +546,6 @@ a {
     position: relative;
     z-index: 2;
 }
-/* .subscribe_box {
-    display: flex;
-    width: 1600px;
-    height: 438px;
-    margin-top: 97px;
-} */
-
 .subscribe_box {
     display: flex;
     align-items: center;
