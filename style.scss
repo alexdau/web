@@ -171,6 +171,140 @@ a {
 .header__cart {
     margin-right: 26px;
 }
+.cartCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 440px;
+    width: 262px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: absolute;
+    visibility: visible;
+    top: 83px;
+    left: 1120px;
+    padding-left: 17px;
+    padding-right: 15px;
+}
+.carfCard__block_prod {
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    width: 261px;
+    margin-top: 17px;
+}
+.addCartbl-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;}
+.addCartPrNm {
+    font-size: 12px;
+    font-weight: bold;
+    color: #222222;
+}
+.rating-area {
+    overflow: hidden;
+    width: 77px;
+    margin: 0;
+}
+.rating-area:not(:checked) > input {
+    display: none;
+}
+.rating-area:not(:checked) > label {
+    float: right;
+    width: 15px;
+    padding: 0;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 40px;
+    color: lightgrey;
+    text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+    content: '★';
+}
+.rating-area > input:checked ~ label {
+    color: gold;
+    text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+    color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+    color: gold;
+    text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+    position: relative;
+}
+.rating-result {
+    display: flex;
+    width: 77px;
+    margin: 0 ;
+}
+.rating-result span {
+    padding: 0;
+    font-size: 20px;
+    line-height: 2;
+    color: lightgrey;
+    text-shadow: 1px 1px #bbb;
+}
+.rating-result > span:before {
+    content: '★';
+}
+.rating-result > span.active {
+    color: gold;
+    text-shadow: 1px 1px #c60;
+}
+.addCartPrQnt {
+    color: $siteColor;
+    font-size: 12px;
+}
+.carfCard__block_price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222222;
+}
+.addCartbl-3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+}
+.carfCard__blockButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 225px;
+    border: 1px solid #222222;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.carfCard__blockButton_color {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 225px;
+    color: $siteColor;
+    border: solid 1px $siteColor;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+
 
 
 .nav__center {
@@ -711,9 +845,11 @@ a {
 
 .text-gray {
     color: #9f9f9f;
-    margin-bottom: 35px;
     font-size: 14px;
     font-weight: 300;
+    &_2 {
+        margin-bottom: 35px;
+    }
 }
 .footer {
     &__logo {
@@ -740,7 +876,7 @@ a {
     justify-content: flex-end;
     align-items: center;
     flex-grow: 1;
-
+    padding-right: 231px;
 }
 .icon-1 {
     display: flex;
