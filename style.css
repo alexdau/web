@@ -164,7 +164,7 @@ a {
 }
 
 .cartCard {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -178,6 +178,14 @@ a {
   left: 1120px;
   padding-left: 17px;
   padding-right: 15px;
+}
+
+.cartCard:hover {
+  display: flex;
+}
+
+.button:active .cartCard {
+  display: flex;
 }
 
 .carfCard__block_prod {
@@ -314,6 +322,10 @@ a {
   font-weight: bold;
 }
 
+.nav__center {
+  height: 51px;
+}
+
 .menu {
   display: flex;
   justify-content: center;
@@ -326,6 +338,14 @@ a {
   text-transform: uppercase;
 }
 
+.menu__list {
+  position: relative;
+}
+
+.menu__list:hover .drop {
+  display: flex;
+}
+
 .menu__link {
   font-size: 14px;
   font-weight: bold;
@@ -333,12 +353,69 @@ a {
   text-align: left;
   line-height: 26px;
   text-transform: uppercase;
-  padding: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
   display: block;
+  height: 20px;
+}
+
+.drop {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  border: 1px solid #ececec;
+  display: none;
+  position: absolute;
+  top: 152px;
+  margin-left: 19px;
+  z-index: 1;
 }
 
 .menu__link:hover {
   border-bottom: 3px solid #f16d7f;
+}
+
+.drop__flex {
+  width: 234px;
+  margin-right: 46px;
+}
+
+.drop__flex:last-of-type {
+  margin-right: 0;
+}
+
+.drop__last {
+  right: 0;
+}
+
+.drop__ul {
+  list-style-type: none;
+  text-transform: none;
+}
+
+.drop__h3 {
+  font-size: 14px;
+  color: #232323;
+  text-align: left;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 8px;
+}
+
+.drop__link {
+  font-size: 14px;
+  color: #646464;
+  text-align: right;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+}
+
+.drop__link:hover {
+  color: #f16d7f;
 }
 
 .promo {

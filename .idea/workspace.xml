@@ -12,6 +12,9 @@
       <executable />
     </execution>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="4" />
+  </component>
   <component name="ProjectId" id="1XMFRCiyxQ8GZy7HnrJuSeB7IYQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -44,6 +47,7 @@
       <workItem from="1580861921209" duration="2291000" />
       <workItem from="1580896876318" duration="16713000" />
       <workItem from="1580985095330" duration="15481000" />
+      <workItem from="1581068183187" duration="11484000" />
     </task>
     <servers />
   </component>
@@ -67,10 +71,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580862638320" />
-    <state x="327" y="251" key="com.intellij.ide.util.TipDialog" timestamp="1580985159451">
+    <state x="327" y="251" key="com.intellij.ide.util.TipDialog" timestamp="1581090001453">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="327" y="251" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580985159451" />
+    <state x="327" y="251" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581090001453" />
     <state x="616" y="242" key="run.anything.popup" timestamp="1580862526022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
