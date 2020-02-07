@@ -94,6 +94,9 @@ a {
     letter-spacing: 0.03em;
     line-height: 32px
 }
+.header__browse:hover ~ .drop__browse {
+    display: flex;
+}
 .arrow-1 {
     margin: 13px 0 0;
     display: flex;
@@ -154,6 +157,9 @@ a {
     line-height: 32px;
     text-decoration: none;
 }
+.button:hover ~ .cartCard {
+        display: flex;
+    }
 
 .arrow-2 {
     margin: 13px 0 0;
@@ -182,7 +188,7 @@ a {
     border-radius: 5px;
     position: absolute;
     visibility: visible;
-    top: 83px;
+    top: 70px;
     left: 1120px;
     padding-left: 17px;
     padding-right: 15px;
@@ -330,8 +336,9 @@ a {
 }
 .menu__list {
     position: relative;
+    height: 52px;
 }
-.menu__list:hover .drop {
+.menu__list:hover + .drop {
     display: flex;
 }
 .menu__link {
@@ -357,6 +364,18 @@ a {
     margin-left: 19px;
     z-index: 1;
 }
+.drop__last {
+    right: 0;
+}
+.drop__browse {
+    position: absolute;
+    top: 69px;
+    left: 340px;
+    height: 530px;
+    width: 262px;
+}
+.drop:hover {
+    display: flex;}
 .menu__link:hover  {
     border-bottom: 3px solid $siteColor;
 }
