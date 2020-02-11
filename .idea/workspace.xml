@@ -33,6 +33,18 @@
       <recent name="D:\html\GEEK\WEB\4" />
     </key>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -48,7 +60,8 @@
       <workItem from="1580896876318" duration="16713000" />
       <workItem from="1580985095330" duration="15481000" />
       <workItem from="1581068183187" duration="16846000" />
-      <workItem from="1581143893113" duration="1347000" />
+      <workItem from="1581143893113" duration="1946000" />
+      <workItem from="1581412803998" duration="3302000" />
     </task>
     <servers />
   </component>
@@ -56,6 +69,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581412944071">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581412944071" />
     <state x="740" y="226" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1580862372245">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -72,10 +89,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580862638320" />
-    <state x="327" y="251" key="com.intellij.ide.util.TipDialog" timestamp="1581153831652">
+    <state x="327" y="251" key="com.intellij.ide.util.TipDialog" timestamp="1581412809340">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="327" y="251" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581153831652" />
+    <state x="327" y="251" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581412809340" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1581413159821">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581413159821" />
     <state x="616" y="242" key="run.anything.popup" timestamp="1580862526022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
