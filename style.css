@@ -2,14 +2,26 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: unset;
 }
 
 body {
   font-family: "Lato", sans-serif;
+  line-height: unset;
 }
 
 a {
   text-decoration: none;
+  color: #222222;
+}
+
+p {
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #222222;
 }
 
 .center {
@@ -73,6 +85,20 @@ a {
   align-items: center;
 }
 
+.header__logo {
+  font-size: 27px;
+  font-weight: 300;
+  color: #222222;
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.header__logo:hover {
+  color: #222222;
+}
+
 .header__browse {
   padding: 0 10px;
   background-color: #fafafa;
@@ -94,6 +120,7 @@ a {
 
 .header__browse:hover ~ .drop__browse {
   display: flex;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
 }
 
 .arrow-1 {
@@ -114,6 +141,7 @@ a {
   justify-content: center;
   align-items: center;
   border: 1px solid #e6e6e6;
+  margin-top: 8px;
 }
 
 .search__button {
@@ -129,11 +157,13 @@ a {
 .header__form {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .header__right {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .button {
@@ -154,6 +184,11 @@ a {
 
 .button:hover ~ .cartCard {
   display: flex;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
+}
+
+.button:hover {
+  color: #ffffff;
 }
 
 .arrow-2 {
@@ -182,18 +217,16 @@ a {
   border-radius: 5px;
   position: absolute;
   visibility: visible;
-  top: 70px;
-  left: 1120px;
+  top: 38px;
+  left: -70px;
   padding-left: 17px;
   padding-right: 15px;
+  z-index: 1;
 }
 
 .cartCard:hover {
   display: flex;
-}
-
-.button:active .cartCard {
-  display: flex;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
 }
 
 .carfCard__block_prod {
@@ -232,7 +265,7 @@ a {
   padding: 0;
   cursor: pointer;
   font-size: 20px;
-  line-height: 40px;
+  line-height: 30px;
   color: lightgrey;
   text-shadow: 1px 1px #bbb;
 }
@@ -298,6 +331,7 @@ a {
   font-size: 16px;
   font-weight: bold;
   color: #222222;
+  width: 228px;
 }
 
 .addCartbl-3 {
@@ -318,6 +352,10 @@ a {
   font-weight: bold;
 }
 
+.carfCard__blockButton:hover {
+  box-shadow: 0 0 8px 0 #1b1b1b;
+}
+
 .carfCard__blockButton_color {
   display: flex;
   align-items: center;
@@ -330,8 +368,14 @@ a {
   font-weight: bold;
 }
 
+.carfCard__blockButton_color:hover {
+  box-shadow: 0 0 8px 0 #f16d7f;
+}
+
 .nav__center {
   height: 51px;
+  display: flex;
+  justify-content: center;
 }
 
 .menu {
@@ -344,6 +388,7 @@ a {
   text-align: left;
   line-height: 26px;
   text-transform: uppercase;
+  position: relative;
 }
 
 .menu__list {
@@ -353,6 +398,7 @@ a {
 
 .menu__list:hover + .drop {
   display: flex;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
 }
 
 .menu__link {
@@ -375,7 +421,7 @@ a {
   border: 1px solid #ececec;
   display: none;
   position: absolute;
-  top: 152px;
+  top: 40px;
   margin-left: 19px;
   z-index: 1;
 }
@@ -386,14 +432,15 @@ a {
 
 .drop__browse {
   position: absolute;
-  top: 69px;
-  left: 340px;
+  top: 47px;
+  left: -20px;
   height: 530px;
   width: 262px;
 }
 
 .drop:hover {
   display: flex;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
 }
 
 .menu__link:hover {
@@ -566,16 +613,14 @@ a {
 
 .textwhite_p {
   color: #222222;
-  /* letter-spacing: 0.75px; */
-  /* display: block; */
   margin-left: 19px;
   padding-top: 16px;
-  /* padding: 0px 20px; */
   font-size: 18px;
   font-weight: 900;
   text-align: left;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: unset;
 }
 
 .textwhite_h {
@@ -629,6 +674,10 @@ a {
 
 .product:hover .product__add {
   display: flex;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .product:hover .product__img {
@@ -707,6 +756,7 @@ a {
   color: #ffffff;
   text-align: right;
   line-height: 32px;
+  text-decoration: none;
 }
 
 .product-down_img {
